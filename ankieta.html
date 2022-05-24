@@ -2,9 +2,49 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Ankieta</title>
+    <link rel=stylesheet href=style.css>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    
+    <div id=logo>F1</div>
+    <div id="main">
+        <form id="form" action="mailto:mojemail@gmail.com">
+            <label for="imie">Twoje imie: </label><br>
+            <input type="text" id="imie" ><label></label><br>
+            <br>
+            <label>Czy chciałbyś/chciałabyś jezdzic w Formule 1?</label><br>
+            <input type="radio" id="tak" value="tak" name="checi" checked><label for="tak">Tak</label><br>
+            <input type="radio" id="nie" value="nie" name="checi"><label for="nie">Nie</label><br>
+            <br>
+            <label>Według ciebie najlepszy kierowca: </label><br>
+            <input type="checkbox" id="sport" value="sport"><label>Sebastian Vettel</label><br>
+            <input type="checkbox" id="muzyka" value="muzyka"><label>Fernando Alonso</label><br>
+            <input type="checkbox" id="filmy" value="filmy"><label>Niki Lauda</label><br>
+            <input type="checkbox" id="ksiazki" value="ksiazki"><label>Alain Prost</label><br>
+            <br>
+            <label>Jakiej przeglądarki używasz?</label>
+            <select name=przegladarka id=przegladarka>
+            <option value=IE disabled>Internet Explorer</option>
+            <option value=Chrome>Chrome</option>
+            <option value=Firefox>Firefox</option>
+            <option value=inne>inne</option>        
+        </select><br><br>
+        <input type=reset value=Wyczyść> &nbsp;
+        <input type=submit value=Wyślij>
+        </form>
+    </div>
+    <div id=menu1>
+        <div class="item1"><a href="index.html">Strona główna</a></div>
+        <div class="item2"><a href="galeria.html">Galeria</a></div>
+        <div class="item3"><a href="ankieta.html">Ankieta</a></div>
+        <div class="item4">Dodatkowe informacje</div>
+    </div>
+    <div id=menu2>
+        <div class="item1"><a href="index.html">Strona główna</a></div>
+        <div class="item2"><a href="galeria.html">Galeria</a></div>
+        <div class="item3"><a href="ankieta.html">Ankieta</a></div>
+        <div class="item4">Dodatkowe informacje</div>
+    </div>
 </body>
 </html>

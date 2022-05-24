@@ -29,6 +29,14 @@ img{
 #wew{
   position: absolute;
 }
+#form{
+  position: absolute;
+  left:30%;
+  right:30%;
+  width:40%;
+  top:5%;
+  font-size: 30pt;
+}
 #logo{
     position:fixed;
     top:0%;
