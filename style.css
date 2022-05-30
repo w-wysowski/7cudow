@@ -5,13 +5,41 @@
 body{
     background-color: #0f0f0f;
 }
+.burgir {
+  overflow: hidden;
+  position: fixed;
+  width:100px;
+  height:60%;
+  top:30%;
+  right:0%;
+}
+
+.burgir #linki {
+  display: none;
+}
+
+.burgir a {
+  color: white;
+  background-color:#e2181b;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.burgir a.icon {
+  background-color: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0%;
+}
 #main{
     position: absolute;
     left: 10%;
     right:10%;
     top:10%;
     width:80%;
-    padding-bottom: 20%;
     background-color: white;
     border-radius: 20pt;
     z-index:1;
@@ -19,16 +47,28 @@ body{
     border-style:solid;
     border-color: grey;
     color:black;
+    padding-bottom: 5%;
 }
 a{
   text-decoration: none;
+}
+.zdj{
+  position: relative;
 }
 img{
   width:30%;
 }
 #wew{
   position: absolute;
+  height: 100%;
 }
+#wewn{
+  position: absolute;
+  height: 100%;
+  top:3%;
+  left:3%;
+}
+
 #tab{
   border-style: solid;
   border-color: #0f0f0f;
@@ -40,11 +80,6 @@ td{
 
 }
 #form{
-  position: absolute;
-  left:30%;
-  right:30%;
-  width:40%;
-  top:5%;
   font-size: 30pt;
 }
 #logo{
@@ -63,11 +98,12 @@ td{
 #footer{
   position:fixed;
   top:96%;
+  height: 4%;
   left:0px;
   width:100%;
   background-color: #e2181b;
   text-align: center;
-  font-size: 30pt;
+  font-size: 25pt;
   color:white;
   font-family:'myFirstFont' ;
   text-shadow: 2px 2px 3px white;
@@ -87,13 +123,14 @@ td{
     top:30%;
     width:10%;
     text-align: center;
-    font-size: 20pt;
+    font-size: 2vw;
   z-index: 2;
 }
 #menu2{display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: 25% 25% 25% 25% 25% 25% 25%;
+    grid-template-rows: 22% 22% 22% 22% 22% 22% 22% 22%;
     grid-template-areas:
+    'zero'
      'one'
      'two'
      'three'
@@ -106,7 +143,7 @@ td{
      top:30%;
      width:10%;
      text-align: center;
-     font-size: 18pt;
+     font-size: 1.5vw;
      z-index: 2;
 }
 table{
@@ -116,7 +153,8 @@ table{
 h1{
     text-align: center;
 }
-.item1 {grid-area: one; color:#e2181b; background-color: white;border-left: solid black;border-right: solid black; border-top: solid black; border-top-right-radius: 10pt; border-top-left-radius: 10pt;}
+.item0 {grid-area: zero; color:white; background-color:#e2181b;border-left: solid black;border-right: solid black; border-top: solid black; border-top-right-radius: 10pt; border-top-left-radius: 10pt;}
+.item1 {grid-area: one; color:#e2181b; background-color: white;border-left: solid black;border-right: solid black; }
 .item2 {grid-area: two ; background-color: #e2181b; color:white;border-left: solid black;border-right: solid black;}
 .item3 {grid-area: three; color:#e2181b; background-color: white;border-left: solid black;border-right: solid black;}
 .item4 {grid-area: four; color:white; background-color: #e2181b;border-left: solid black;border-right: solid black;}
@@ -124,9 +162,10 @@ h1{
 .item6 {grid-area: six; color:white; background-color: #e2181b;border-left: solid black;border-right: solid black;}
 .item7 {grid-area: seven; background-color: white; color:#e2181b;border-left: solid black; border-right: solid black; border-bottom-width: 1px; border-bottom: solid black; border-bottom-right-radius: 10pt; border-bottom-left-radius: 10pt;}
 
+@media screen and (min-width:1201px) {
+}
 @media screen and (max-width:1200px) {
   #logo{
-    font-size:25pt;
     height:5%;
 }
 #footer{
@@ -139,61 +178,59 @@ h1{
           top:5%;
           left:0px;
           width:30%;
-          font-size:18pt;
+          font-size: 2.5vw;
           height:4.375%;
+          grid-template-rows: 100% 100% 100% 100%;
       }
       #menu2 {
         top:5%;
         right:0px;
         width:30%;
-        font-size:18pt;
         height:10%;
     }
       #main{
           top:22.5%;
-          height:77.5%;
-          padding-bottom: 150%;
       }
     }
   
   @media screen and (max-width:800px) {
       #logo{
           height:5%;
-          font-size:25pt;
+          font-size:20pt;
       }
     #menu1 {
       position: absolute;
+      grid-template-rows: 100% 100% 100% 100%;
       z-index: 1;
+      font-size: 3vw;
         top:5%;
         left:10%;
         width:80%;
-        font-size:18pt;
         height:3.75%;
     }
     #menu2 {
+      display: none;
       top:81.8%;
       right:10%;
       width:80%;
-      font-size:13pt;
       height:8.5%;
   }
     #main{
         top:20%;
-        height:65%;
-        bottom: 15%;
-        padding-bottom: 150%;
     }
     img{
       display: none;
     }
   }
+  .burgir {
+    z-index:3;
+  }
   @media screen and (max-width:670px) {
 
     #main{
         top:20%;
-        height:65%;
-        bottom: 15%;
-        padding-bottom: 400%;
+
+
     }
     img{
       display: none;
