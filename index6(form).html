@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="hider">Formularz</h1>
+    <ul class="out">
+        <li class="out"><a class="out" href="index1(main).html">Strona główna</a></li>
+        <li class="out"><a class="out" href="index2(zdjecia).html">Galeria zdjęć</a></li>
+        <li class="out"><a class="out" href="index3(film).html">Filmy</a></li>
+        <li class="out"><a class="out" href="index4(muzyka).html">Muzyka</a></li>
+        <li class="out"><a class="out" href="index5(linki).html">Linki</a></li>
+        <li class="out"><a class="out" href="index6(form).html">Formularz</a></li>
+               
+    </ul><br>
+    <ul class="in">
+        <li class="in"><a class="in" href="#hider">Nagłówek</a></li>
+        <li class="in"><a class="in" href="#form">Formularz</a></li>
+    </ul>
+    <br><br>
+    <form id="form" action="mailto:mojemail@gmail.com">
+        <label for="imie">Twoje imie: </label><br>
+        <input type="text" id="imie" ><label></label><br>
+        <br>
+        <label>Czy chciałbyś/chciałabyś polecieć do Londynu?</label><br>
+        <input type="radio" id="tak" value="tak" name="checi" checked><label for="tak">Tak</label><br>
+        <input type="radio" id="nie" value="nie" name="checi"><label for="nie">Nie</label><br>
+        <br>
+        <label>Twoje zainteresowania: </label><br>
+        <input type="checkbox" id="sport" value="sport"><label>Sport</label><br>
+        <input type="checkbox" id="muzyka" value="muzyka"><label>Muzyka</label><br>
+        <input type="checkbox" id="filmy" value="filmy"><label>Filmy</label><br>
+        <input type="checkbox" id="ksiazki" value="ksiazki"><label>Ksiązki</label><br>
+        <br>
+        <label>Jakiej przeglądarki używasz?</label>
+        <select name=przegladarka id=przegladarka>
+        <option value=IE disabled>Internet Explorer</option>
+        <option value=Chrome>Chrome</option>
+        <option value=Firefox>Firefox</option>
+        <option value=inne>inne</option>        
+    </select><br><br>
+    <input type=reset value=Wyczyść> &nbsp;
+    <input type=submit value=Wyślij>
+    </form>
+</body>
+</html>

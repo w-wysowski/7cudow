@@ -5,28 +5,33 @@
     <title>Strona główna</title>
     <link rel=stylesheet href=style.css>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img{
+        width:20%;
+        }
+    </style>
 </head>
 <body>
     <div id=container>
         <div id=logo>F1</div>
         <div id=main>
-            <h1>7 najlepszych kierowców F1</h1>
+            <h1 id="hider">7 najlepszych kierowców F1</h1>
             <p id="wew">
                 <ol>
                     <li>
                         <h2 id="SV">Sebastian Vettel</h2>
-                        <p>Sebastian Vettel to czterokrotny mistrz świataw formule 1 . Ustanowił także wiele rekordów. Jest njsmłodszym zdobywcą tytułu mistrza świata, najmłodszym zdobywcą pole position.</p>
-                        <img src="foto/seb.jpeg" width="500px">
+                        <p>Sebastian Vettel to czterokrotny mistrz świataw Formule 1 . Ustanowił także wiele rekordów. Jest njsmłodszym zdobywcą tytułu mistrza świata, najmłodszym zdobywcą pole position.</p>
+                        <img src="foto/seb.jpeg">
                     </li>
                     <li>
                         <h2 id="FA">Fernando Alonso</h2>
-                        <p>Fernando Alonso to dwukrotny mistrz świata w formule 1. Jednak nie tylko tam osiągnął sukcesy, gdyz jest on zwycięzcą 24-godzinnego wyścigu Le Mans. W 2018 roku odszedł w formuły 1, jednak w 2021 powrócił z emerytury.</p>
+                        <p>Fernando Alonso to dwukrotny mistrz świata w Formule 1. Jednak nie tylko tam osiągnął sukcesy, gdyz jest on zwycięzcą 24-godzinnego wyścigu Le Mans. W 2018 roku odszedł w Formuły 1, jednak w 2021 powrócił z emerytury.</p>
                         <img src="foto/alonso.jpeg" width="500px">
                     </li>
                     <li>
                         <h2 id="LH">Lewis Hamilton</h2>
-                        <p>Lewis to siedmiokrotny mistrz świata w formule 1. Jest takze licznym rekordzistą. Do jego rekordów zaliczają się min. najwięcej tytułów mistrzowskich, Najwięcej zwycięstw, Najwięcej podiów, Najwięcej Pole Position</p>
-                        <table>
+                        <p>Lewis to siedmiokrotny mistrz świata w Formule 1. Jest takze licznym rekordzistą. Do jego rekordów zaliczają się min. najwięcej tytułów mistrzowskich, Najwięcej zwycięstw, Najwięcej podiów, Najwięcej Pole Position</p>
+                        <table id="tab">
                             <tr>
                                 <td>najwięcej tytułów mistrzowskich</td>
                                 <td>7</td>
@@ -48,7 +53,7 @@
                     </li>
                     <li>
                         <h2 id="MS">Michael Schuamcher</h2>
-                        <p>Schumacher jest siedmiokrotnym mistrzem świata w formule 1. Ma na swoim koncie wile rekordów takich jak: </p>
+                        <p>Schumacher jest siedmiokrotnym mistrzem świata w Formule 1. Ma na swoim koncie wile rekordów takich jak: </p>
                         <ul>
                             <li>
                                 Najwięcej tytułów mistrzowskich
@@ -83,11 +88,16 @@
             <div class="item4">Dodatkowe informacje</div>
         </div>
         <div id=menu2>
-            <div class="item1"><a href="#SV">Sebastian Vettel</a></div>
+            <div class="item1"><a href="#hider">Sebastian Vettel</a></div>
             <div class="item2"><a href="#SV">Fernando Alonso</a></div>
             <div class="item3"><a href="#FA">Lewis Hamilton</a></div>
             <div class="item4"><a href="#LH">Michael Schumacher</a></div>
+            <div class="item5"><a href="#MS">Ayrton Senna</a></div>
+            <div class="item6"><a href="#AS">Alain Prost</a></div>
+            <div class="item7"><a href="#AP">Niki Lauda</a></div>
+            
         </div>
+        <div id="footer">Wojciech Wysowski 1tc</div>
     </div>
 </body>
 </html>
