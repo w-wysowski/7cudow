@@ -1,0 +1,129 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Formula1-Regular.ttf);
+  }
+.item1 {grid-area: one; color:#e2181b; background-color: white; border-top: solid black; }
+.item2 {grid-area: two ; background-color: #e2181b; color:white;border-top: solid black;}
+.item3 {grid-area: three; color:#e2181b; background-color: white;border-top: solid black;}
+.item4 {grid-area: four; color:white; background-color: #e2181b;border-top: solid black;}
+.item1:visited {color:#e2181b;}
+.item2:visited {color:white;}
+.item3:visited {color:#e2181b;}
+.item4:visited {color:white;}
+#menu1 {
+    display: grid;
+     grid-template-columns: 100% 100% 100% 100%; 
+     grid-template-rows: 100%;
+     grid-template-areas:
+      'one two three four';
+    position: fixed;
+      left:0%;
+      top:6%;
+      width:25%;
+      text-align: center;
+      font-size: 2.1vw;
+    z-index: 1;
+  }
+  #main{
+    position: absolute;
+    left: 10%;
+    right:10%;
+    top:15%;
+    width:80%;
+    background-color: white;
+    border-radius: 20pt;
+    z-index:1;
+    font-family: 'myFirstFont';
+    border-style:solid;
+    border-color: grey;
+    color:black;
+    padding-bottom: 5%;
+}
+#logo{
+    position:fixed;
+    top:0%;
+    left:0px;
+    width:100%;
+    background-color: #e2181b;
+    text-align: center;
+    font-size: 35pt;
+    color:white;
+    font-family:'myFirstFont' ;
+    text-shadow: 2px 2px 3px white;
+    z-index:2;
+}
+#footer{
+  position:fixed;
+  top:96%;
+  height: 4%;
+  left:0px;
+  width:100%;
+  background-color: #e2181b;
+  text-align: center;
+  font-size: 25pt;
+  color:white;
+  font-family:'myFirstFont' ;
+  text-shadow: 2px 2px 3px white;
+  z-index:2;
+}
+body{
+    background-color: #0f0f0f;
+}
+a{text-decoration: none;}
+.lineczki{color:black; text-decoration: underline;}
+.lineczki:visited{
+  color: black;
+}
+.burgir {
+    overflow: hidden;
+    position: fixed;
+    width:30%;
+    height:60%;
+    top:0%;
+    right:0%;
+    z-index: 0;
+  }
+  
+  #linki {
+    display: none;
+  }
+  
+  .aburgir {
+    color: white;
+    border-collapse: separate;
+    border-style:solid;
+    border-color: #0f0f0f;
+    background-color:#e2181b;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .icon {
+    background-color: white;
+    padding: 15px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0%;
+  }
+@media screen and (max-width:1200px) {
+    #footer{
+      top:96.5%;
+      height:4%;
+      font-size: 20pt;
+    }
+    body{
+      background-color: #383838;
+    }
+    
+    
+        }
+      
+      @media screen and (max-width:800px) {
+        .burgir{z-index: 2;}
+        #menu1{
+        display: none;
+      }
+      }

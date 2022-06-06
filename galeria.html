@@ -3,48 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Galeria</title>
-    <link rel=stylesheet href=style.css>
+    <link rel=stylesheet href=galeria.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        img {
-            display:block;
-            padding: 3%;
-            padding-bottom: 7%;
-        }
     </style>
 </head>
 <body>
     <div id=logo>F1</div>
     <div id="gora" style="position:absolute; top:0%;"></div>
+
     <div id="main">
-        <h1 id="hider">Galeria zdjęć</h1>
-        <ol>
-        <li><h2 id="SV">Sebastian Vettel</h2><div class="zdj"><img alt="kierowca" src="foto/seb.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/seb2.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/seb3.jpeg"></div></li>
-        <li><h2 id="FA">Fernando Alonso</h2><div class="zdj"><img alt="kierowca" src="foto/alonso.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/alonso2.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/alonso3.jpeg"></div></li>
-        <li><h2 id="LH">Lewis Hamilton</h2><div class="zdj"><img alt="kierowca" src="foto/hamilton.jpeg"></div<div class="zdj"><img alt="kierowca" src="foto/hamilton2.webp"></div><div class="zdj"><img alt="kierowca" src="foto/hamilton3.jpeg"></div>></li>
-        <li><h2 id="MS">Michael Schuamcher</h2><div class="zdj"><img alt="kierowca" src="foto/schumacher.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/schumacher2.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/schumacher3.jpeg"></div></li>
-        <li><h2 id="AS">Ayrton Senna</h2><div class="zdj"><img alt="kierowca" src="foto/senna.webp"></div><div class="zdj"><img alt="kierowca" src="foto/senna2.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/senna3.jpeg"></div></li>
-        <li><h2 id="AP">Alain Prost</h2><div class="zdj"><img alt="kierowca" src="foto/prost.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/prost2.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/prost3.jpeg"></div></li>
-        <li><h2 id="NL">Niki Lauda</h2><div class="zdj"><img alt="kierowca" src="foto/lauda.webp"></div><div class="zdj"><img alt="kierowca" src="foto/lauda2.jpeg"></div><div class="zdj"><img alt="kierowca" src="foto/lauda3.webp"></div></li>
-        </ol>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img alt="kierowca" src="foto/seb.jpeg">
+            </div>
+            
+            <div class="mySlides fade">
+                <img alt="kierowca" src="foto/alonso3.jpeg">
+              </div>
+            
+              <div class="mySlides fade">
+                <img alt="kierowca" src="foto/hamilton.jpeg">
+              </div>
+              <div class="mySlides fade">
+                <img alt="kierowca" src="foto/schumacher.jpeg">
+              </div>
+              <div class="mySlides fade">
+                <img alt="kierowca" src="foto/senna.webp">
+              </div>
+              <div class="mySlides fade">
+                <img alt="kierowca" src="foto/prost.jpeg">
+              </div>
+              <div class="mySlides fade">
+                <img alt="kierowca" src="foto/lauda3.webp">
+              </div>
+            
+            </div>
+
     </div>
     <div id=menu1>
-        <div class="item1"><a href="index.html">Strona główna</a></div>
-        <div class="item2"><a href="galeria.html">Galeria</a></div>
-        <div class="item3"><a href="ankieta.html">Ankieta</a></div>
-        <div class="item4"><a href="dodatk_inf.html">Dodatkowe informacje</a></div>
-    </div>
-    <div id=menu2>
-        <div class="item0"><a href="#gora">Góra</a></div>
-        <div class="item1"><a href="#hider">Sebastian Vettel</a></div>
-        <div class="item2"><a href="#SV">Fernando Alonso</a></div>
-        <div class="item3"><a href="#FA">Lewis Hamilton</a></div>
-        <div class="item4"><a href="#LH">Michael Schumacher</a></div>
-        <div class="item5"><a href="#MS">Ayrton Senna</a></div>
-        <div class="item6"><a href="#AS">Alain Prost</a></div>
-        <div class="item7"><a href="#AP">Niki Lauda</a></div>
-        
+        <div class="item1" id="item1"><a class="item1" href="index.html">Strona główna</a></div>
+        <div class="item2" id="item2"><a class="item2" href="galeria_test.html">Galeria</a></div>
+        <div class="item3" id="item3"><a class="item3" href="ankieta.html">Ankieta</a></div>
+        <div class="item4" id="item4"><a class="item4" href="dodatk_inf.html">Dodatkowe informacje</a></div>
     </div>
     <div id="footer">Wojciech Wysowski 1tc</div>
+    <div class="burgir">
+        <div id="linki">
+          <a class="aburgir" href="index.html">Strona główna</a>
+          <a class="aburgir" href="galeria_test.html">Galeria</a>
+          <a class="aburgir" href="ankieta.html">Ankieta</a>
+          <a class="aburgir" href="dodatk_inf.html">Dodatkowe informacje</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="funkcja()">
+          <i class="fa fa-bars" style="color:black;"></i>
+        </a>
+    </div>
+    <script>
+        function funkcja() {
+          var x = document.getElementById("linki");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
 </body>
 </html>

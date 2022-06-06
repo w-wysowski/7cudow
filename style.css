@@ -10,8 +10,9 @@ body{
   position: fixed;
   width:100px;
   height:60%;
-  top:30%;
+  top:0%;
   right:0%;
+  z-index: -1;
 }
 
 .burgir #linki {
@@ -20,11 +21,15 @@ body{
 
 .burgir a {
   color: white;
+  border-style: solid;
+  border-color: #0f0f0f;
+  border-collapse: separate;
   background-color:#e2181b;
   padding: 10px 12px;
   text-decoration: none;
   font-size: 17px;
   display: block;
+  
 }
 
 .burgir a.icon {
@@ -47,13 +52,12 @@ body{
     border-style:solid;
     border-color: grey;
     color:black;
+    padding-top: 2%;
+    padding-left: 2%;
     padding-bottom: 5%;
 }
 a{
-  text-decoration: none;
-}
-.zdj{
-  position: relative;
+  text-decoration: none; 
 }
 img{
   width:30%;
@@ -123,8 +127,9 @@ td{
     top:30%;
     width:10%;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.1vw;
   z-index: 2;
+  
 }
 #menu2{display: grid;
     grid-template-columns: 100%; 
@@ -140,7 +145,7 @@ td{
      'seven';
    position: fixed;
      right:0;
-     top:30%;
+     top:20%;
      width:10%;
      text-align: center;
      font-size: 1.5vw;
@@ -153,15 +158,24 @@ table{
 h1{
     text-align: center;
 }
-.item0 {grid-area: zero; color:white; background-color:#e2181b;border-left: solid black;border-right: solid black; border-top: solid black; border-top-right-radius: 10pt; border-top-left-radius: 10pt;}
-.item1 {grid-area: one; color:#e2181b; background-color: white;border-left: solid black;border-right: solid black; }
-.item2 {grid-area: two ; background-color: #e2181b; color:white;border-left: solid black;border-right: solid black;}
-.item3 {grid-area: three; color:#e2181b; background-color: white;border-left: solid black;border-right: solid black;}
-.item4 {grid-area: four; color:white; background-color: #e2181b;border-left: solid black;border-right: solid black;}
-.item5 {grid-area: five; background-color: white; color:#e2181b;border-left: solid black;border-right: solid black;}
-.item6 {grid-area: six; color:white; background-color: #e2181b;border-left: solid black;border-right: solid black;}
-.item7 {grid-area: seven; background-color: white; color:#e2181b;border-left: solid black; border-right: solid black; border-bottom-width: 1px; border-bottom: solid black; border-bottom-right-radius: 10pt; border-bottom-left-radius: 10pt;}
-
+.item0 {grid-area: zero; color:white; background-color:#e2181b;  border-top-right-radius: 10pt; border-top-left-radius: 10pt;}
+.item1 {grid-area: one; color:#e2181b; background-color: white; }
+.item2 {grid-area: two ; background-color: #e2181b; color:white;}
+.item3 {grid-area: three; color:#e2181b; background-color: white;}
+.item4 {grid-area: four; color:white; background-color: #e2181b;}
+.item5 {grid-area: five; background-color: white; color:#e2181b;}
+.item6 {grid-area: six; color:white; background-color: #e2181b;}
+.item7 {grid-area: seven; background-color: white; color:#e2181b; border-bottom-width: 1px; border-bottom-right-radius: 10pt; border-bottom-left-radius: 10pt;}
+.item0:visited {color:white;}
+.item1:visited {color:#e2181b;}
+.item2:visited {color:white;}
+.item3:visited {color:#e2181b;}
+.item4:visited {color:white;}
+.item5:visited {color:#e2181b;}
+.item6:visited {color:white;}
+.item7:visited {color:#e2181b;}
+#item1 {grid-area: one; color:#e2181b; background-color: white;  border-top-right-radius: 10pt; border-top-left-radius: 10pt;}
+#item4 {grid-area: four; background-color: #e2181b; color:white; border-bottom-right-radius: 10pt; border-bottom-left-radius: 10pt;}
 @media screen and (min-width:1201px) {
 }
 @media screen and (max-width:1200px) {
@@ -198,6 +212,9 @@ h1{
           height:5%;
           font-size:20pt;
       }
+    #form{
+      font-size: 15pt;
+    }
     #menu1 {
       position: absolute;
       grid-template-rows: 100% 100% 100% 100%;
@@ -221,10 +238,11 @@ h1{
     img{
       display: none;
     }
-  }
-  .burgir {
+    .burgir {
     z-index:3;
   }
+  }
+  
   @media screen and (max-width:670px) {
 
     #main{
