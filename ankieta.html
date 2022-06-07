@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Ankieta</title>
     <link rel=stylesheet href=dodt.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -45,15 +46,24 @@
     </div>
     <div class="burgir">
         <div id="linki">
-          <a href="#gora">Góra</a>
-          <a href="#hider">Sebastian Vettel</a>
-          <a href="#SV">Fernando Alonso</a>
-          <a href="#FA">Lewis Hamilton</a>
-          <a href="#LH">Michael Schumacher</a>
-          <a href="#MS">Ayrton Senna</a>
-          <a href="#AS">Alain Prost</a>
-          <a href="#AP">Niki Lauda</a>
-          </div>
+          <a class="aburgir" href="index.html">Strona główna</a>
+          <a class="aburgir" href="galeria.html">Galeria</a>
+          <a class="aburgir" href="ankieta.html">Ankieta</a>
+          <a class="aburgir" href="dodatk_inf.html">Dodatkowe informacje</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="funkcja()">
+          <i class="fa fa-bars" style="color:black;"></i>
+        </a>
     </div>
+    <script>
+        function funkcja() {
+          var x = document.getElementById("linki");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
 </body>
 </html>
