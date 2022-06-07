@@ -6,10 +6,10 @@
 .item2 {grid-area: two ; background-color: #e2181b; color:white;border-top: solid black;}
 .item3 {grid-area: three; color:#e2181b; background-color: white;border-top: solid black;}
 .item4 {grid-area: four; color:white; background-color: #e2181b;border-top: solid black;}
-.item1:visited {color:#e2181b;}
-.item2:visited {color:white;}
-.item3:visited {color:#e2181b;}
-.item4:visited {color:white;}
+#item1:visited {color:#e2181b;}
+#item2:visited {color:white;}
+#item3:visited {color:#e2181b;}
+#item4:visited {color:white;}
 #menu1 {
     display: grid;
      grid-template-columns: 100% 100% 100% 100%; 
@@ -18,11 +18,17 @@
       'one two three four';
     position: fixed;
       left:0%;
-      top:6%;
+      top:5.8%;
       width:25%;
       text-align: center;
-      font-size: 2.1vw;
+      font-size: 2vw;
     z-index: 1;
+  }
+#form{
+  font-size: 30pt;
+}
+  .menu2{
+    display: none;
   }
   #main{
     position: absolute;
@@ -37,6 +43,8 @@
     border-style:solid;
     border-color: grey;
     color:black;
+    padding-top: 2%;
+    padding-left: 2%;
     padding-bottom: 5%;
 }
 #logo{
@@ -125,5 +133,8 @@ a{text-decoration: none;}
         .burgir{z-index: 2;}
         #menu1{
         display: none;
+      }
+      #form{
+        font-size: 15pt;
       }
       }
